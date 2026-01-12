@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="uz">
   <head>
@@ -12,6 +13,10 @@
         margin: 0;
         padding: 0;
       }
+      /* Ensure charts don't disappear in export */
+      .recharts-responsive-container {
+        min-width: 0;
+      }
     </style>
     <script type="importmap">
     {
@@ -21,7 +26,8 @@
         "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
         "recharts": "https://esm.sh/recharts@2.12.7?external=react,react-dom",
         "react/": "https://esm.sh/react@18.2.0/",
-        "react-dom/": "https://esm.sh/react-dom@18.2.0/"
+        "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+        "html2canvas": "https://esm.sh/html2canvas@1.4.1"
       }
     }
     </script>
